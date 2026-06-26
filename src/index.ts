@@ -28,7 +28,7 @@ const BASE = 'https://packagephobia.com/v2/api.json';
 const tools: McpToolExport['tools'] = [
   {
     name: 'size',
-    description: 'Install + publish size for an npm package.',
+    description: 'Return the publish size and full install size (including dependencies) in bytes for an npm package name and optional version via packagephobia.com.',
     inputSchema: {
       type: 'object',
       properties: {
