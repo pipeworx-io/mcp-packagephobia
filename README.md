@@ -1,14 +1,20 @@
-# mcp-packagephobia
+# @pipeworx/packagephobia
 
-Packagephobia MCP — install-size analysis for npm packages
+Packagephobia MCP — measures the size an npm package takes up on disk after install (publish-size + install-size including all transitive deps). Complements bundlephobia, which measures runtime bundle size. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 965+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `size` | Return the publish size and full install size (including dependencies) in bytes for an npm package name and optional version via packagephobia.com. |
+- `size(package, version?)` — install + publish size for an npm package
+
+## Why bother?
+
+Bundle size ≠ install size. A package can be tiny at runtime but pull in heavy dev/transitive deps that slow CI cache hydration. packagephobia measures the full `node_modules` footprint.
+
+## Data source
+
+`https://packagephobia.com/v2/api.json?p=<pkg>[@version]`
 
 ## Quick Start
 
@@ -24,7 +30,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 965+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -48,7 +54,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
