@@ -1,0 +1,22 @@
+[
+  {
+    "name": "size",
+    "description": "Return the publish size and full install size (including dependencies) in bytes for an npm package name and optional version via packagephobia.com.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "package": {
+          "type": "string",
+          "description": "npm package name (scoped allowed)"
+        },
+        "version": {
+          "type": "string",
+          "description": "Specific version (default latest)"
+        }
+      },
+      "required": [
+        "package"
+      ]
+    }
+  }
+]
