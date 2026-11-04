@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-packagephobia",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Packagephobia MCP — install-size analysis for npm packages",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "packagephobia",
     "gatewaySlug": "packagephobia",
-    "sourceHash": "v1-cdb73410a68c02d794916c8d005c9f38350518472de32efda0a1f32793622795",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-d5eaec9a200e1c13a8c76ca0a14238cb1699bfca3657460089281d924a82a45c",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
